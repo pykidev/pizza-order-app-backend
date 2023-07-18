@@ -10,3 +10,8 @@ class AddPizzaOrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = PizzaOrder
         fields = ["quantity", "size", "toppings", "add_ons", "delivery"]
+        
+class PizzaOrderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PizzaOrder
+        fields = '__all__'
